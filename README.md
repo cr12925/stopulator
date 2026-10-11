@@ -22,6 +22,14 @@ The basic functions of the library are:
 - List known organs (shortnames and full names)
 - List minimum set of stopheads (with colours and quantity) for a given set of organs
 
+# Getting started
+
+- Pull the repository and make sure you have PHP and MySQL or MariaDB installed. 
+- Create a database on your server and grant all privileges on it to a known user with a password
+- Put the database server name, database name, username and password into stopulator.conf
+- Use your SQL command line utility to put the SQL schema (which is in stopulator.sql) into the database. This will create an empty database.
+- Run `php ./stopulator.php -h` for help, which shows the command line options.
+
 # More to come
 
 Proper documentation for the library to follow, but for now have a look at the CLI sample - `stopulator.php`
