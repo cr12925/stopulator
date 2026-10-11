@@ -151,7 +151,7 @@ function stopulator_import_stops($mysqli, $organ_id, $lines)
 		{
 			$force_red = $force_black = $force_blue = 0;
 	
-			if (preg_match ("/^\.(.+)$/", $line, $inner_matches))
+			if (preg_match ("/^\./", $line, $inner_matches))
 				continue;
 			else if (preg_match ("/^\+(.+)$/", $line, $inner_matches))
 			{
