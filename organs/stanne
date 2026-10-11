@@ -1,0 +1,61 @@
+.
+. Organ definition file format
+. .Comment
+. #DIVISION - start stoplist for division
+. +Stophead - force Stophead to be Dark Red text
+. Stophead - (No prefixed character) - Black stophead, but will automatically be set to Dark Red for certain
+.            Patterns of text (contains "on", "to", "Octave", "Sub Octave", "Unison Off", "Tremulant"), or
+.            Dark Blue (contains "Orage" or "Anches")
+. -Stophead - force Stophead to Black text
+. *Stophead - force Stophead to Dark Blue text
+. 
+. Some lines in this file (e.g. Great Rohr Flute 8') are commented and replaced with an 
+. alternative to minimize stopheads which are basically for the same stop but where one
+. has a unicode character such as an O-Umlaut instead of a U.
+.  
+#GREAT
+OPEN DIAPASON I 8
+OPEN DIAPASON II 8
+DULCIANA 8
+LIEBLICH GEDACT 8
+PRINCIPAL 4
+CLEAR FLUTE 4
+FIFTEENTH 2
+MIXTURE IV
+TRUMPET 8
+CLARION 4
+#SWELL
+LIEBLICH BOURDON 16
+GEIGEN PRINCIPAL 8
+SALICET 4
+.ROHR FLUTE 8
+ROHR FLÖTE 8
+FLAUTO MAGICO 4
+GAMBA 8
+VOIX CÉLESTE 8
+PICCOLO 2
+MIXTURE III
+CLARINET 8
+TRUMPET 8
+OBOE 8
+CONTRA FAGOTTO 16
+TREMULANT
+#PEDAL
+ECHO BASS 16
+SUB BASS 16
+PRINCIPAL 8
+FIFTEENTH 4
+TROMBONE 16
++OCTAVE
++SUB-OCTAVE
++UNISON OFF
+SWELL to GREAT
+SWELL to PEDAL
+GREAT to PEDAL
++SWELL OCTAVE to GREAT
++SWELL SUB-OCTAVE to GREAT
+.CRESC. SWELL
+.CRESC. GREAT
+.CRESC. PEDAL
+.CRESC. CHOIR
+.CRESC. SOLO
