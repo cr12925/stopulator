@@ -142,21 +142,22 @@ else if ($argv[1] == "-l") /* List */
 		}
 	}
 
-	$stophead_count = 0;
-
 	if (isset($csv_out))
 		stopulator_csvout($stoplist, $csv_out);
 	else
 	{
+		$stophead_count = 0;
+
 		foreach ($stoplist as $stop)
 		{
 			printf("%s %-10s %d\n",
 				stopulator_pad($stop["stop"],40), $stop["colour"], $stop["number"]);
 			$stophead_count += $stop["number"];
 		}
-	}
 
-	printf ("%d stopheads\n", $stophead_count);
+		printf ("%d stopheads\n", $stophead_count);
+
+	}
 	
 }
 else if ($argv[1] == "-o") /* List organs */
